@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Memory Game</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="./Images/Logo.png">
+        
+        <script src="MemoryGame.js" defer></script>
+        <link href="style.css" type="text/css" rel="stylesheet"  >
+        <!-- Google Inter Font Embedding-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="Images/MemoryGameLogo.png" id="memoryGameLogo">
+        <div id="memoryGameApp">
+            <div id="memoryGameTitle" >
+                &nbsp;
+                <div id="memoryGameVolume">
+                    <input id="gameVolumeRange" type="range" min="0" max="100"  value="0">
+                    <button id="gameVolumeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.62 245.49">
+                            <path d="M751.62,6185a34,34,0,1,1-34-34A34,34,0,0,1,751.62,6185ZM593,6184a124.49,124.49,0,0,1,50.39-100,12.43,12.43,0,0,0,1.17-19l-.1-.09a12.44,12.44,0,0,0-16-1,149.42,149.42,0,0,0,.7,240.6,12.45,12.45,0,0,0,16-1l.1-.09a12.43,12.43,0,0,0-1.23-19A124.48,124.48,0,0,1,593,6184Zm35.6,0a89,89,0,0,1,40.56-74.61,12.4,12.4,0,0,0,1.69-19.35l-.1-.09a12.37,12.37,0,0,0-15.27-1.47,113.88,113.88,0,0,0,.75,191.53,12.36,12.36,0,0,0,15.2-1.51l.11-.09a12.43,12.43,0,0,0-1.86-19.46A89,89,0,0,1,628.6,6184Zm35.81,1a53.24,53.24,0,0,1,30.72-48.19,12.47,12.47,0,0,0,3.49-20.34l-.09-.09a12.49,12.49,0,0,0-13.89-2.24,78.12,78.12,0,0,0,.08,141.76,12.49,12.49,0,0,0,13.87-2.24l.09-.09a12.47,12.47,0,0,0-3.5-20.35A53.23,53.23,0,0,1,664.41,6185Z" transform="translate(-568 -6061.44)"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="memoryGameDifficulties">
+                <span>Difficulty</span>
+                <input type="button" difficulty="novice"   value="8">
+                <input type="button" difficulty="easy"   value="12">
+                <input type="button" difficulty="normal" value="16">
+                <input type="button" difficulty="hard"   value="20">
+                <input type="button" difficulty="extreme"   value="24">
+            </div>
+            <div id="memoryGameScores">
+                <span>ScoreBoard</span>
+            </div>
+            <div id="memoryGameBoard">
+                Select a difficulty and begin.
+            </div>
+            <div id="memoryGameClock"><div>Score</div></div>
+        </div>
+        <div id="memoryGameInfo">
+            <div id="gameGuide">
+                Welcome to the Memory Card Game. This game is all about speed and memory! Each difficulty has it's own amount of cards and time scores to beat. Can you beat the top score in each difficulty? 
+            </div>
+            <div id="gameAuthor">
+                <div>Created by Danny Mancheno</div>
+                <div id="gameAuthorEmailDiv">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.83 118.18"><path d="M505.65-2442.54a2.57,2.57,0,0,1-1.54-2.34h0v-8.87A18.26,18.26,0,0,1,522.36-2472H638.7A18.25,18.25,0,0,1,657-2453.75v8.87h0a2.56,2.56,0,0,1-1.53,2.34l-74.89,32.71Zm74.88,50.67-73.33-32a2.21,2.21,0,0,0-3.09,2v50.71a17.37,17.37,0,0,0,17.37,17.37h118.1A17.37,17.37,0,0,0,657-2371.18v-50.71a2.2,2.2,0,0,0-3.09-2Z" transform="translate(-504.11 2472)"/></svg>
+                    contact@dannymancheno.me
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
