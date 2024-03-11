@@ -313,7 +313,6 @@ body{
     }
 }
 
-/* 
 @media (max-width: 490px){
     #memoryGameLogo{
         margin: 0;
@@ -323,9 +322,9 @@ body{
     #memoryGameApp{
         gap: 10px;
         grid-template-areas:'title title title'
-                            'difficulties scores counter'
-                            'board board board';
-        grid-template-columns: 100px 100px auto;
+        'difficulties scores counter'
+        'board board board';
+        grid-template-columns: min-content 100px auto;
         grid-template-rows: fit-content auto auto !important;
     }
     #memoryGameDifficulties, #memoryGameScores, #memoryGameClock{
@@ -342,6 +341,7 @@ body{
         border-radius: 10px;
     }
 }
+/* 
 @media (min-width: 530px) and (max-width: 599px), (min-width: 600px){
     #memoryGameBoard.hardSize{
         grid-template-columns: auto auto auto auto auto;
