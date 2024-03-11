@@ -2,11 +2,11 @@ html{
     font-family: inter;
     background: #1e1e1e;
     /* background: radial-gradient(at 50% 300px, rgb(51, 51, 51), rgb(13, 13, 13) 70%); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     width: 100%;
-    height: 100% !important;
     min-height: 1100px;
+    height: 100% !important;
 }
 body{
     display: flex;
@@ -208,7 +208,7 @@ body{
     opacity: 0;
 }
 .matchResultDiv.correct{
-    background: radial-gradient(rgba(131, 255, 122, .4) 5%, transparent 50%);
+    background: -gradient(rgba(131, 255, 122, .4) 5%, transparent 50%);
 }
 .matchResultDiv.incorrect{
     background: radial-gradient(rgba(255, 108, 108, .4) 5%, transparent 50%);
@@ -313,7 +313,7 @@ body{
     }
 }
 
-
+/* 
 @media (max-width: 490px){
     #memoryGameLogo{
         margin: 0;
@@ -327,14 +327,12 @@ body{
                             'board board board';
         grid-template-columns: 100px 100px auto;
         grid-template-rows: fit-content auto auto !important;
-        /* background: red; */
     }
     #memoryGameDifficulties, #memoryGameScores, #memoryGameClock{
         height: 100%;
     }
     #memoryGameBoard{
         margin-left: 0;
-        /* margin-top: 20px; */
         border-bottom-left-radius: 20px;
     }
     #memoryGameClock{
@@ -359,4 +357,4 @@ body{
         grid-template-columns: auto auto auto auto auto auto;
         padding: 10px 0px;
     }
-}
+} */
