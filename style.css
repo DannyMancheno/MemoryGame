@@ -328,7 +328,7 @@ body{
         grid-template-rows: fit-content auto auto !important;
     }
     #memoryGameDifficulties, #memoryGameScores, #memoryGameClock{
-        height: 100%;
+        /* height: 100%; */
     }
     #memoryGameBoard{
         margin-left: 0;
