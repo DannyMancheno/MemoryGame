@@ -361,6 +361,6 @@ body{
 
 
 /* Testing purposes */
-#memoryGameSiteWidth{
+#memoryGameSiteWidth, #memoryGameVersion{
     color: yellow;
 }
