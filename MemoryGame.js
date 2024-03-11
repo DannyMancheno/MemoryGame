@@ -319,6 +319,8 @@ IDElement('gameVolumeRange').addEventListener('input', event =>{ game.toggleAudi
     
 
 // TESTING PURPOSES
-// document.addEventListener('DOMContentLoaded', ()=>{
-//     memoryGameDifficultyInput[1].click();
-// })
+document.addEventListener('DOMContentLoaded', ()=>{
+    // console.log(this.innerWidth);
+    IDElement('memoryGameSiteWidth').innerText = this.innerWidth;
+    // memoryGameDifficultyInput[1].click();
+})
