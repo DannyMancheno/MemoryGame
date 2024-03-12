@@ -25,7 +25,8 @@ var URLS = [
     `${githubPath}/SoundFX/TickTock.mp3`,
     `${githubPath}/SoundFX/Victory.mp3`,
     `${githubPath}/Images/Logo.png`,
-    `${githubPath}/MemoryGameLogo.png`,
+    `${githubPath}/Images/MemoryGameLogo.png`,
+    `${githubPath}/Images/AppLogo.png`,
 ]
 
 
