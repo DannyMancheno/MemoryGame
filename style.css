@@ -27,6 +27,7 @@ body{
     border-radius: 25px;
     display: grid !important;
     grid-template-columns: 100px auto;
+    box-sizing: border-box;
     grid-template-areas:'title title'
                         'difficulties board'
                         'scores board'
@@ -326,13 +327,16 @@ body{
         'board board board';
         grid-template-columns: min-content 100px auto;
         grid-template-rows: fit-content auto auto !important;
+        
     }
     #memoryGameDifficulties, #memoryGameScores, #memoryGameClock{
         /* height: 100%; */
+        border: solid 1px red;
     }
     #memoryGameBoard{
         margin-left: 0;
         border-bottom-left-radius: 20px;
+        border: solid 1px cyan;
     }
     #memoryGameClock{
         display: grid;
