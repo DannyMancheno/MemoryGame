@@ -1,11 +1,7 @@
 html{
     font-family: inter;
     background: #1e1e1e;
-    /* background: radial-gradient(at 50% 300px, rgb(51, 51, 51), rgb(13, 13, 13) 70%); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
     width: 100%;
-    /* min-height: 1100px; */
     height: 100% !important;
 }
 body{

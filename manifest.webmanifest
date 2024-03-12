@@ -6,8 +6,8 @@
     "scope": "/MemoryGame/",
     "start_url": "/MemoryGame/",
     
-    "background_color": "#000",
-    "theme_color": "#000",
+    "background_color": "#1e1e1e",
+    "theme_color": "#1e1e1e",
    
     "display": "fullscreen", 
    
