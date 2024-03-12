@@ -1,0 +1,21 @@
+{
+    "name": "MemoryGame",
+    "short_name": "MG",
+    "description": "A memory based game on matching cards!",
+   
+    "scope": "/MemoryGame/",
+    "start_url": "/MemoryGame/",
+    
+    "background_color": "#000",
+    "theme_color": "#000",
+   
+    "display": "fullscreen", 
+   
+    "icons": [
+        {
+          "src": "/MemoryGame/Images/Logo.png",
+          "type": "image/png",
+          "sizes": "700x700"
+        }
+    ]
+}

@@ -17,6 +17,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!-- https://github.com/DannyMancheno/MemoryGame.git -->
+        <!-- PWA -->
+        <link rel="canonical" href="https://DannyMancheno.github.io/MemoryGame/" />
+        <link rel="manifest" href="/MemoryGame/manifest.webmanifest" />
+        <script>
+            if(navigator.serviceWorker){
+                navigator.serviceWorker.register(
+                    '/MemoryGame/sw.js',
+                    {scope: 'MemoryGame/'}
+                )
+            }
+        </script>
     </head>
     <body>
         <img src="Images/MemoryGameLogo.png" id="memoryGameLogo">
@@ -61,6 +73,6 @@
             </div>
         </div>
         <!-- <div id="memoryGameSiteWidth"></div> -->
-        <div id="memoryGameVersion">v1.1.0</div>
+        <div id="memoryGameVersion">v1.1.1</div>
     </body>
 </html>
