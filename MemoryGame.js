@@ -16,13 +16,14 @@ class memoryGame{
         // Basic set of time scores to incentivize a challenge to beat. 
         this.scores = 
         {
-            novice: [15, 25, 35, 50],
+            novice: [15, 25, 35, 45],
             easy: [25, 40, 50, 65],
-            normal: [35, 45, 60, 75],
+            normal: [40, 50, 60, 75],
             hard: [60, 85, 100, 120],
             extreme: [100, 140, 170, 200]
         }
-        
+        this.scoreTop = {'novice': 15, 'easy':25, 'normal':40, 'hard': 60, 'extreme': 100}
+
         this.clock = clock;
         this.previousCardObj = undefined;
         this.previousCardHTML = undefined;
@@ -74,6 +75,7 @@ class memoryGame{
         if(localStorage.getItem('memoryGameScores') !== null){
             this.scores = JSON.parse(localStorage.getItem('memoryGameScores'));
         }
+
         this.displayScores(this.difficultyTxt);
 
         this.playSoundEffect('GameStart');
@@ -248,8 +250,10 @@ class memoryGame{
     displayScores(difficultyTxt){
         let max = (this.scores[difficultyTxt].length > 4) ? 4 : this.scores[difficultyTxt].length;
         let scoresHTML = `<div id='difficultyTitle'>${difficultyTxt}</div><ol>`;
+        
         for(let i = 0; i < max; i++){
-            scoresHTML = scoresHTML + `<li class='scoreBoardScore'> ${this.scores[difficultyTxt][i]} </li>`
+            let topScore = this.scores[difficultyTxt][i] < this.scoreTop[difficultyTxt]
+            scoresHTML = scoresHTML + `<li class='scoreBoardScore ${topScore ? 'topScore' : ''}'> ${this.scores[difficultyTxt][i]} </li>`
         }
         scoresHTML = scoresHTML + `</ol>`;
         this.scoreboard.innerHTML = scoresHTML;
@@ -259,7 +263,6 @@ class memoryGame{
         this.scores[difficulty].sort((a,b)=>{
             return a - b;
         })
-        // this.scores[difficulty].splice(0,3)
     }
     isGameOver(){
         let fixedCards = 0;
@@ -305,7 +308,6 @@ let game = new memoryGame( // constructor(board, difficulty, scoreboard, clock, 
     IDElement('memoryGameClock'),
     IDElement('gameVolumeButton')
 )
-// console.log(localStorage.getItem('memoryGameScores'));
 
 let memoryGameDifficultyInput = queryAll('#memoryGameDifficulties input');
 for(let i = 0 ; i < memoryGameDifficultyInput.length; i++){
@@ -320,7 +322,9 @@ IDElement('gameVolumeRange').addEventListener('input', event =>{ game.toggleAudi
 
 // TESTING PURPOSES
 document.addEventListener('DOMContentLoaded', ()=>{
-    // console.log(this.innerWidth);
     // IDElement('memoryGameSiteWidth').innerText = this.innerWidth;
     // memoryGameDifficultyInput[4].click();
+
+
+
 })
