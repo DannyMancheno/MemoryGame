@@ -16,11 +16,11 @@ class memoryGame{
         // Basic set of time scores to incentivize a challenge to beat. 
         this.scores = 
         {
-            novice: [15.000, 25.000, 35.000],
-            easy: [25.000, 40.000, 50.000],
-            normal: [35.000, 45.000, 60.000],
-            hard: [60.000, 85.000, 100.000],
-            extreme: [100.000, 130.000, 200.000]
+            novice: [15, 25, 35, 50],
+            easy: [25, 40, 50, 65],
+            normal: [35, 45, 60, 75],
+            hard: [60, 85, 100, 120],
+            extreme: [100, 140, 170, 200]
         }
         
         this.clock = clock;
@@ -246,7 +246,7 @@ class memoryGame{
         this.board.append(moveResult);
     }
     displayScores(difficultyTxt){
-        let max = (this.scores[difficultyTxt].length > 3) ? 3 : this.scores[difficultyTxt].length;
+        let max = (this.scores[difficultyTxt].length > 4) ? 4 : this.scores[difficultyTxt].length;
         let scoresHTML = `<div id='difficultyTitle'>${difficultyTxt}</div><ol>`;
         for(let i = 0; i < max; i++){
             scoresHTML = scoresHTML + `<li class='scoreBoardScore'> ${this.scores[difficultyTxt][i]} </li>`
@@ -322,5 +322,5 @@ IDElement('gameVolumeRange').addEventListener('input', event =>{ game.toggleAudi
 document.addEventListener('DOMContentLoaded', ()=>{
     // console.log(this.innerWidth);
     // IDElement('memoryGameSiteWidth').innerText = this.innerWidth;
-    // memoryGameDifficultyInput[1].click();
+    // memoryGameDifficultyInput[4].click();
 })

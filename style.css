@@ -26,7 +26,7 @@ body{
     max-width: 800px;
     border-radius: 25px;
     display: grid !important;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 110px auto;
     box-sizing: border-box;
     grid-template-areas:'title title'
                         'difficulties board'
@@ -139,14 +139,16 @@ body{
     padding: 5px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.4); */
     cursor: pointer;
     color: rgb(222, 255, 210);
     background: rgb(135, 189, 117);
+    background: none;
+    border: solid 1px rgb(135, 189, 117);
 
 }
 #memoryGameDifficulties>input:hover{
-    animation: animate-difficulty-button-hovered 0.2s forwards;
+    animation: animate-T-button-hovered 0.2s forwards;
 }
 @keyframes animate-difficulty-button-hovered{
     from{
@@ -161,16 +163,19 @@ body{
     grid-area: scores;
     margin-bottom: 10px;
     font-size: 16px;
+    text-align: center;
+    /* border: solid 1px red; */
+    
 }
 
 #memoryGameClock{
     grid-area: counter;
     text-align: end;
     border-bottom-left-radius: 20px;
-}
-#memoryGameClock > div{
-    font-size: 16px;
-    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gameStartCountDown{
@@ -182,9 +187,8 @@ body{
     margin-left: 10px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    padding: 20px;
-    align-items:center;
+    padding: 5px;
+    align-content: center;
     justify-content: center;
     border-bottom-right-radius: 20px;
     text-align: center;
@@ -267,13 +271,24 @@ body{
 #memoryGameScores > ol{
     background: none;
     display: flex;
-    width: 100%;
     flex-direction: column;
 }
+#memoryGameScores > #difficultyTitle{
+    text-align: center;
+    margin-bottom: none;
+}
+#memoryGameScores > ol > li{
+    /* border: solid 1px red; */
+    box-sizing: border-box;
+    transform: translateX(-20px);
+    
+}
+
 .scoreBoardScore{
     /* min-height: 132px; */
     font-size: 16px;
     text-align: center;
+    
 }
 @keyframes flashClockResult{
     0%{
@@ -319,24 +334,22 @@ body{
         margin: 0;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 624px){
     #memoryGameApp{
         gap: 10px;
         grid-template-areas:'title title title'
         'difficulties scores counter'
         'board board board';
-        grid-template-columns: min-content 100px auto;
+        grid-template-columns: 100px auto 100px;
         grid-template-rows: fit-content auto auto !important;
         
     }
     #memoryGameDifficulties, #memoryGameScores, #memoryGameClock{
         /* height: 100%; */
-        border: solid 1px red;
     }
     #memoryGameBoard{
         margin-left: 0;
         border-bottom-left-radius: 20px;
-        border: solid 1px cyan;
     }
     #memoryGameClock{
         display: grid;
@@ -345,26 +358,31 @@ body{
         border-radius: 10px;
     }
 }
-/* 
-@media (min-width: 530px) and (max-width: 599px), (min-width: 600px){
+@media (min-width: 460px){
     #memoryGameBoard.hardSize{
         grid-template-columns: auto auto auto auto auto;
+        border: solid 2px red;
     }
 }
-@media (min-width: 520px) and (max-width: 599px){
+@media (min-width: 520px) and (max-width: 624px){
     #memoryGameBoard.maxSize{
         grid-template-columns: auto auto auto auto auto auto;
     }
 }
-@media (min-width: 600px){
+@media (min-width: 625px){
     #memoryGameBoard.maxSize{
         grid-template-columns: auto auto auto auto auto auto;
         padding: 10px 0px;
     }
-} */
-
+}
+@media (hover: none) and (pointer: coarse) {
+    #memoryGameTitle{
+        display: none !important;
+    }
+}
 
 /* Testing purposes */
 #memoryGameSiteWidth, #memoryGameVersion{
+    margin-top: 20px;
     color: yellow;
 }
