@@ -13,7 +13,7 @@
    
     "icons": [
         {
-          "src": "/MemoryGame/Images/Logo.png",
+          "src": "/MemoryGame/Images/AppLogo.png",
           "type": "image/png",
           "sizes": "700x700"
         }
