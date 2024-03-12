@@ -397,7 +397,7 @@ body{
 }
 
 /* Testing purposes */
-#memoryGameSiteWidth, #memoryGameVersion{
-    margin-top: 10px;
-    color: yellow;
+#memoryGameVersion{
+    margin-top: 5px;
+    color: yellow;    
 }
