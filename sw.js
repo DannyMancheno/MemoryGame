@@ -10,7 +10,7 @@ var APP_PREFIX = 'gppwa_'
 
 // App version - The version of the catch, change whenever the program
 // is updated, otherwise users are served the old version files
-var VERSION = '1.1.7'
+var VERSION = '1.1.8'
 
 // Files needed for offline use
 var URLS = [
@@ -25,8 +25,8 @@ var URLS = [
     `${githubPath}/SoundFX/TickTock.mp3`,
     `${githubPath}/SoundFX/Victory.mp3`,
     `${githubPath}/Images/Logo.png`,
-    `${githubPath}/Images/MemoryGameLogo.png`,
     `${githubPath}/Images/AppLogo.png`,
+    `${githubPath}/Images/MemoryGameLogo.png`,
 ]
 
 

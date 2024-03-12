@@ -1,6 +1,6 @@
 {
     "name": "MemoryGame",
-    "short_name": "MG",
+    "short_name": "MemoryGame",
     "description": "A memory based game on matching cards!",
    
     "scope": "/MemoryGame/",
