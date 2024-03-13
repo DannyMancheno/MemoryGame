@@ -14,19 +14,19 @@ var VERSION = '1.2.0'
 
 // Files needed for offline use
 var URLS = [
-    `${githubPath}/`,
-    `${githubPath}/index.html`,
-    `${githubPath}/MemoryGame.js`,
-    `${githubPath}/style.css`,
-    `${githubPath}/SoundFX/CardHide.mp3`,
-    `${githubPath}/SoundFX/CardMatch.mp3`,
-    `${githubPath}/SoundFX/CardReveal.mp3`,
-    `${githubPath}/SoundFX/CardWrong.mp3`,
-    `${githubPath}/SoundFX/TickTock.mp3`,
-    `${githubPath}/SoundFX/Victory.mp3`,
-    `${githubPath}/Images/Logo.png`,
-    `${githubPath}/Images/AppLogo.png`,
-    `${githubPath}/Images/MemoryGameLogo.png`,
+    `${GHPATH}/`,
+    `${GHPATH}/index.html`,
+    `${GHPATH}/MemoryGame.js`,
+    `${GHPATH}/style.css`,
+    `${GHPATH}/SoundFX/CardHide.mp3`,
+    `${GHPATH}/SoundFX/CardMatch.mp3`,
+    `${GHPATH}/SoundFX/CardReveal.mp3`,
+    `${GHPATH}/SoundFX/CardWrong.mp3`,
+    `${GHPATH}/SoundFX/TickTock.mp3`,
+    `${GHPATH}/SoundFX/Victory.mp3`,
+    `${GHPATH}/Images/Logo.png`,
+    `${GHPATH}/Images/AppLogo.png`,
+    `${GHPATH}/Images/MemoryGameLogo.png`,
 ]
 
 

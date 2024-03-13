@@ -19,13 +19,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
         <!-- PWA -->
         <link rel="canonical" href="https://DannyMancheno.github.io/MemoryGame/" />
-        <link rel="manifest" href="/MemoryGame/manifest.webmanifest"/>
+        <link rel="manifest" href="manifest.json"/>
         <script>
-            if (navigator.serviceWorker) {
-              navigator.serviceWorker.register (
-                '/MemoryGame/sw.js',
-                {scope: '/MemoryGame/'}
-              )
+            if("serviceWorker" in navigator){
+                window.addEventListener('load', ()=>{
+                    navigator.serviceWorker
+                    .register('./sw.js')
+                    .then(res => console.log('SW register'))
+                    .catch(err => console.log('SW unregistered'))
+                })
             }
         </script>
     </head>
