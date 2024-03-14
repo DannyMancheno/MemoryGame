@@ -10,7 +10,7 @@ var APP_PREFIX = 'gppwa_'
 
 // App version - The version of the catch, change whenever the program
 // is updated, otherwise users are served the old version files
-var VERSION = '1.2.1'
+var VERSION = '1.2.2'
 
 // Files needed for offline use
 var URLS = [
